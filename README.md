@@ -1,24 +1,18 @@
-# README
+#OVERALL APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- 3 Pages Home Contact About.
+- Install Devise and Petergate for admin only access for editing.
 
-Things you may want to cover:
+# HOME PAGE
 
-* Ruby version
+- Display 3 images.
+- Admin is able to upload and change images.
+- User can see images and content.
 
-* System dependencies
+# ABOUT 
 
-* Configuration
+- Blank
 
-* Database creation
+# CONTACT
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Info to come
