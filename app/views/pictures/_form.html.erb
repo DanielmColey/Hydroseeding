@@ -1,15 +1,22 @@
 <%= form_for(@picture) do |f| %>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-9">
 			<div class="form-group">
 			  <%= f.label :title %>
 			  <%= f.text_field :title%>
 			</div>
 
+			<!-- This button works with the preview -->
+			<img id="blah" src="#" alt="Your Image" width="600" height="600" style="float: right;" />
+			<br>
+			<input type="file" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+
+			<!-- This button actually works with the upload -->
 			<div class="form-group">
 				<label class="btn btn-primary">
-					Upload a main image file <%= f.file_field :image, style: 'display:none;' %>
+					Upload a main image file <%= f.file_field :image, style: 'display:none;', id: 'blah' %>
 				</label>
+					<img onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])"></img>
 			</div>
 
 		<div class="form-group">
