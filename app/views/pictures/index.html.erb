@@ -1,0 +1,10 @@
+<h1>Homepage</h1>
+
+<% @pictures.each do |picture| %>
+	<h1><%= picture.title %></h1>
+	<%= image_tag picture.image %>
+	<% if user_signed_in? %>
+		<br>
+		<%= link_to "Edit", edit_picture_path(picture) %>
+	<% end %>
+<% end %>

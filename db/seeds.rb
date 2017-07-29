@@ -12,3 +12,8 @@ User.create(email: "test@test.com",
 						last_name: "Solo")
 
 puts "1 user created"
+
+Picture.create(title: "Test Picture",
+							 image: "http://via.placeholder.com/350x150")
+
+puts "1 picture created"

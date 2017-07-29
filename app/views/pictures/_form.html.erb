@@ -1,0 +1,19 @@
+<%= form_for(@picture) do |f| %>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+			  <%= f.label :title %>
+			  <%= f.text_field :title%>
+			</div>
+
+			<div class="form-group">
+				<label class="btn btn-primary">
+					Upload a main image file <%= f.file_field :image, style: 'display:none;' %>
+				</label>
+			</div>
+
+		<div class="form-group">
+		  <%= f.submit 'Save Picture', class: 'btn btn-primary' %>
+		</div>
+	</div>
+<% end %>
