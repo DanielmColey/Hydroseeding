@@ -1,36 +1,42 @@
-<div class="contact">
-<div id="contact-call">
-	<p>Give us a call,<br> We'll get you set up!</p>
-	<p id="number">385.743.1615<br> citywidehydroseeding@gmail.com</p>
+<div class="wrapper">
+	<div class="contact">
+	<div id="contact-call">
+		<p>Give us a call,<br> We'll get you set up!</p>
+		<p id="number">385.743.1615<br> citywidehydroseeding@gmail.com</p>
+	</div>
+
+	<form id="form-wrap" action="send_mail.php" method="post">
+		<div>
+			<h1>Get a Quote!</h1>
+		</div>
+				<div class="side-by-side">
+					<div>
+						<p>Name</p>
+						<input class="text-2" type="text" name="Name" required>
+					</div>
+					<div>
+						<p>Email</p>
+						<input class="text-1" type="text" name="Email" required>
+					</div>
+				</div>
+				<div class="side-by-side">
+					<div>
+						<p>Location</p>
+						<input class="text-2" type="text" name="Location" required>
+					</div>
+					<div>
+						<p>Sq. Footage</p>
+						<input class="text-1" type="text" name="Sq. Footage" required>
+					</div>
+				</div>
+					<p>Notes</p>
+					<textarea></textarea>
+
+					<input type="submit" value="Submit">
+		</form>
+		</div>
+	<div class="push"></div>
 </div>
-
-<form id="form-wrap" action="send_mail.php" method="post">
-	<div>
-		<h1>Get a Quote!</h1>
-	</div>
-			<div class="side-by-side">
-				<div>
-					<p>Name</p>
-					<input class="text-2" type="text" name="Name" required>
-				</div>
-				<div>
-					<p>Email</p>
-					<input class="text-1" type="text" name="Email" required>					
-				</div>
-			</div>
-			<div class="side-by-side">
-				<div>
-					<p>Location</p>
-					<input class="text-2" type="text" name="Location" required>
-				</div>
-				<div>
-					<p>Sq. Footage</p>
-					<input class="text-1" type="text" name="Sq. Footage" required>					
-				</div>
-			</div>
-				<p>Notes</p>
-				<textarea></textarea>
-
-				<input type="submit" value="Submit">
-	</form>
-	</div>
+<div class="footer">
+	<%= render 'shared/footer' %>
+</div>
