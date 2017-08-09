@@ -1,17 +1,11 @@
+<div class="footer">
 <div id="footer-top">
-  <div class="phone">
-    <p>
-      Phone: 385.743.1615
-    </p>
-  <div class="email">
-    <p>
-      Email: citywidehydroseeding@gmail.com
-    </p>
-  </div>
+  <p id="phone">Phone: 385.743.1615</p>
+  <p id="email">Email: citywidehydroseeding@gmail.com</p>
+  </p>
 </div>
 <div id="footer-bottom">
-  <div class="copyright">
-    <p>
+    <p id="copyright">
       City Wide Hydroseeding &copy 2017;
     </p>
     <% if user_signed_in? %>
@@ -20,4 +14,5 @@
       <%= link_to "Admin Login",  new_user_session_path, id: "log-in" %>
     <% end %>
   </div>
+</div>
 </div>
