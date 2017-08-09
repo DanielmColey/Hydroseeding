@@ -1,0 +1,23 @@
+<div id="footer-top">
+  <div class="phone">
+    <p>
+      Phone: 385.743.1615
+    </p>
+  <div class="email">
+    <p>
+      Email: citywidehydroseeding@gmail.com
+    </p>
+  </div>
+</div>
+<div id="footer-bottom">
+  <div class="copyright">
+    <p>
+      City Wide Hydroseeding &copy 2017;
+    </p>
+    <% if user_signed_in? %>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Admin Login",  new_user_session_path, id: "log-in" %>
+    <% end %>
+  </div>
+</div>
