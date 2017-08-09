@@ -9,15 +9,26 @@
   </head>
 
   <body>
-  <%= link_to 'Home', root_path %>
-  <%= link_to 'About', about_path %>
-  <%= link_to 'Contact',  contact_path%>
+    
+      <div id="green1"></div>
+      <div id="num-blue"></div>
+      <div id="nav-gray"></div>
+      <div id="green2"></div>
+    
+    <nav>
+      <%= image_tag("logo1.png", :alt => "hydro logo") %> 
+      <p>801.123.4567</p>
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'About', about_path %>
+      <%= link_to 'Contact',  contact_path%>
+    </nav>
+  
     <p class="notice"><%= notice %></p>
 	  <p class="alert"><%= alert %></p>
     <% if user_signed_in? %>
       <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     <% else %>
-      <%= link_to "Sign In", new_user_session_path %>
+      <%= link_to "Admin Login",  new_user_session_path, id: "log-in" %>
     <% end %>
     <%= yield %>
   </body>
