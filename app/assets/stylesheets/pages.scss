@@ -331,3 +331,11 @@ input[type=button], input[type=submit], input[type=reset] {
 	padding-right: 42%;
 	font-size: 1.2vw;
 }
+
+.faq-buttons {
+	display:flex;
+	width:100%;
+}
+.faq-buttons p {
+	padding-left:15px;
+}

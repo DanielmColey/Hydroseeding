@@ -29,6 +29,8 @@ Rails.application.configure do
   config.assets.debug = true
 
   config.assets.quiet = true
+  config.serve_static_assets = false
+
 
 
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker

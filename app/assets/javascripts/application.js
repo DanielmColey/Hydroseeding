@@ -14,7 +14,10 @@
 //= require jquery-ui
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require bootstrap/bootstrap-rails-tooltip
+//= require bootstrap/bootstrap-rails-popover
 //= require_tree .
+
 
 
 function readURL(input) {
@@ -34,4 +37,17 @@ function readURL(input) {
 
 $("#imgInp").change(function(){
 	readURL(this);
+});
+
+$(document).ready(function() {
+  $('[data-target="popover"]').popover({
+    trigger: 'hover'
+  });
+});
+
+
+$(document).ready(function() {
+  $('[data-toggle="popover"]').popover({
+    trigger: 'hover'
+  ]);
 });
