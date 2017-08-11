@@ -254,11 +254,11 @@ input[type=button], input[type=submit], input[type=reset] {
 #about-approach {
 	position: relative;
 	display: block;
-  margin: auto;
+  margin: 5% 0 0 10%;
   font-size: 1.4vw;
   font-family: 'Rosarivo', serif;
   width: 90%;
-  height: 25vw;
+  height: 20vw;
   color: #373e60;
 }
 
@@ -271,14 +271,15 @@ input[type=button], input[type=submit], input[type=reset] {
 
 #about-approach div {
 	display: inline-block;
-	margin: 9%;
+	margin-left: 10%;
 	width: 30%;
 	text-align: center;
 }
 
 #about-results {
+	display: inline-block;
+	margin: 0 0 2% 22%;
 	position: relative;
-	margin: 8%;
 	text-align: center;
 	font-size: 1.4vw;
 	font-family: 'Rosarivo', serif;
@@ -294,14 +295,15 @@ input[type=button], input[type=submit], input[type=reset] {
 
 #about-pic {
 	position: relative;
-	height: 20vw;
-	max-height: 20vw;
 	text-align: center;
-	border: 2px dashed green;
 	display: block;
   margin: auto;
-  width: 40%;
-  max-width: 40%;
+  width: 60%;
+}
+
+#about-pic img {
+	width: 100%;
+	height: auto;
 }
 
 #FAQ {
