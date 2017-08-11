@@ -79,26 +79,33 @@ nav p {
 	padding-top: 3.5%;
 	padding-right: 3%;
 	font-size: 2.2vw;
-	font-family: 'Rosarivo', serif;
+	font-family: 'Arsenal', sans-serif;
 	z-index: 1;
+	letter-spacing: 2px;
 }
 
 nav a {
 	width: 100%;
 	color: white;
 	font-size: 2.8vw;
-	font-family: 'Rosarivo', serif;
+	font-family: 'Arsenal', sans-serif;
 	padding-left: 3%;
 	width: 100%;
 	z-index: 1;
+	letter-spacing: 3px;
+}
+
+nav a:hover {
+	color: #373e60;
 }
 
 #home-motto {
 	position: relative;
-	font-size: 2vw;
-	font-family: 'Arsenal', sans-serif;
+	font-size: 2.2vw;
+	font-family: 'Rosarivo', serif;
 	float: right;
 	padding-right: 15%;
+	color: white;
 }
 
 #main-pic {
@@ -115,10 +122,11 @@ nav a {
 
 #info {
 	font-size: 1.5vw;
-	font-family: 'Arsenal', sans-serif;
+	font-family: 'Rosarivo', serif;
 	display: inline-block;
-	padding-left: 25%;
+	padding-left: 20%;
   padding-bottom: 5%;
+  text-align: center;
 }
 
 #three-pics {
@@ -139,7 +147,7 @@ nav a {
   margin-left: 2%;
 }
 
-#contact-call {
+#callus {
 	font-size: 2.5vw;
 	font-family: 'Arsenal', sans-serif;
 	padding-left: 20%;
@@ -150,8 +158,11 @@ nav a {
 #number {
 	float: right;
 	padding-right: 20%;
+	padding-top: -10%;
 	text-align: right;
-	color: #373e60;
+	color: #4c5b90;
+	font-size: 2.2vw;
+	font-family: 'Arsenal', sans-serif;
 }
 
 #form-wrap {
@@ -169,7 +180,7 @@ nav a {
 form p {
 	font-size: 1.2vw;
 	font-family: 'Rosarivo', serif;
-	color: #373e60;
+	color: #92c0e7;
 	padding-top: 3%;
 }
 
@@ -215,8 +226,8 @@ textarea {
 
 input[type=button], input[type=submit], input[type=reset] {
     background-color: white;
-    border: .15vw solid #5f3b14;
-    color: #5f3b14;
+    border: .15vw solid #5d5c5d;
+    color: #5d5c5d;
     padding: .5vw 2vw;
     text-decoration: none;
     margin: 1vw .15vw;
@@ -236,7 +247,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	margin-top: 14%;
 	text-align: center;
 	font-size: 1.6vw;
-	color: #373e60;
+	color: #5d5c5d;
 }
 
 #about-intro p {
@@ -248,25 +259,26 @@ input[type=button], input[type=submit], input[type=reset] {
 	font-size: 3.5vw;
 	font-family: 'Arsenal', sans-serif;
 	padding-top: 3%;
-	color: #5d5c5d;
+	color: #4c5b90;
+	letter-spacing: 2px;
 }
 
 #about-approach {
 	position: relative;
-	display: block;
+	display: inline-block;
   margin: 5% 0 0 10%;
   font-size: 1.4vw;
   font-family: 'Rosarivo', serif;
   width: 90%;
   height: 20vw;
-  color: #373e60;
+  color: #5d5c5d;
 }
 
 #about-approach h1 {
 	font-size: 3vw;
 	font-family: 'Arsenal', sans-serif;
 	padding-bottom: 8%;
-	color: #5d5c5d;
+	color: #4c5b90;
 }
 
 #about-approach div {
@@ -278,19 +290,19 @@ input[type=button], input[type=submit], input[type=reset] {
 
 #about-results {
 	display: inline-block;
-	margin: 0 0 2% 22%;
+	margin: 2% 0 2% 22%;
 	position: relative;
 	text-align: center;
 	font-size: 1.4vw;
 	font-family: 'Rosarivo', serif;
-	color: #373e60;
+	color: #5d5c5d;
 }
 
 #about-results h1 {
 	font-size: 3vw;
 	font-family: 'Arsenal', sans-serif;
 	padding-bottom: 3%;
-	color: #5d5c5d;
+	color: #4c5b90;
 }
 
 #about-pic {
@@ -314,7 +326,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	font-size: 2vw;
 	font-family: 'Rosarivo', serif;
 	line-height: 2;
-	color: #373e60;
+	color: #4c5b90;
 	padding-bottom: 5%;
 }
 
@@ -326,12 +338,18 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .panel-heading a {
+	color: #4c5b90;
+}
+
+.panel-heading a:hover {
 	color: #373e60;
 }
 
 .panel-body {
 	font-family: 'Rosarivo', serif;
-	color: #373e60;
+	color: #5d5c5d;
+	font-size: 1.5vw;
+	line-height: 2.2vw;
 }
 
 #footer-top {
@@ -348,7 +366,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	padding-left: 20%;
 	text-align: center;
 	color:white;
-	font-size:2vw;
+	font-size:1.8vw;
 	font-family: 'Arsenal', sans-serif;
 }
 
@@ -358,7 +376,7 @@ input[type=button], input[type=submit], input[type=reset] {
 	padding-right: 15%;
 	text-align: center;
 	color: white;
-	font-size:2vw;
+	font-size:1.8vw;
 	font-family: 'Arsenal', sans-serif;
 }
 
