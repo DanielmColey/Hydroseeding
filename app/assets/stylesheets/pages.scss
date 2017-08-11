@@ -26,11 +26,15 @@ html, body {
 	z-index: -1;
 }
 
+#colors {
+	margin-top: -40%;
+}
+
 #num-blue{
 	position: relative;
 	background-color: #373e60;
 	width: 100%;
-	height: 5vw;
+	padding: 5% 0 0 2%;
 	z-index: -1;
 }
 
@@ -43,27 +47,30 @@ html, body {
 }
 
 #green2 {
-	background-image: url("/app/assets/images/bkgrhome.jpg");
-
+  background-image: url("/assets/bkgrhome.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
 	position: relative;
 	// background-color: #cce4c5;
 	width: 100%;
-	height: 25vw;
-	z-index: -1;
+	height: 45vw;
+	z-index: -2;
 }
 
 nav {
 	position: relative;
-	margin-top: -40vw;
-	z-index: 2;
+	margin-top: -15vw;
+	z-index: 1;
 }
 
 nav img {
+	position: relative;
 	width: 35%;
 	border: 1vw solid #373e60;
 	background-color: white;
 	padding-bottom: 2%;
 	margin: 1% 0 0 5%;
+	z-index: 2;
 }
 
 nav p {
@@ -73,7 +80,7 @@ nav p {
 	padding-right: 3%;
 	font-size: 2.2vw;
 	font-family: 'Rosarivo', serif;
-	z-index: 2;
+	z-index: 1;
 }
 
 nav a {
@@ -83,7 +90,7 @@ nav a {
 	font-family: 'Rosarivo', serif;
 	padding-left: 3%;
 	width: 100%;
-	z-index: 2;
+	z-index: 1;
 }
 
 #home-motto {
@@ -95,7 +102,7 @@ nav a {
 }
 
 #main-pic {
-	margin: 10% 0 5% 30%;
+	margin: 12% 0 5% 30%;
 	position: relative;
 	height: 20vw;
 	max-height: 20vw; 
@@ -111,7 +118,7 @@ nav a {
 	font-family: 'Arsenal', sans-serif;
 	display: inline-block;
 	padding-left: 25%;
-	padding-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 #three-pics {
@@ -136,7 +143,7 @@ nav a {
 	font-size: 2.5vw;
 	font-family: 'Arsenal', sans-serif;
 	padding-left: 20%;
-	padding-top: 15%;
+	padding-top: 17%;
 	color: #5d5c5d;
 }
 
@@ -226,7 +233,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 #about-intro {
 	position:relative;
-	margin-top: 12%;
+	margin-top: 14%;
 	text-align: center;
 	font-size: 1.6vw;
 	color: #373e60;
@@ -389,4 +396,16 @@ input[type=button], input[type=submit], input[type=reset] {
 // POPOVER
 #faq #popover1 {
   position: absolute;
+}
+
+@media only screen and (max-width: 480px) {
+    #footer-top {
+    	margin-bottom: -1%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+  	#footer-top {
+  		margin-bottom: -.5%;
+  	}
 }
